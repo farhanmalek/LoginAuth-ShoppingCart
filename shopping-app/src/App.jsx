@@ -17,16 +17,31 @@ import { featuredProductsLoader } from "./pages/Home";
 import { productsLoader } from "./pages/Shop";
 import { singleProductLoader } from "./pages/Product";
 
+//import provider
+import { CartProvider } from "./context/CartContext";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
+    <Route
+      path="/"
+      element={
+        <CartProvider>
+          <RootLayout />
+        </CartProvider>
+      }
+    >
       <Route loader={featuredProductsLoader} index element={<Home />} />
-      <Route loader={productsLoader} path="shop" element={<Shop />}/>
-      <Route loader={singleProductLoader} path="shop/:id" element ={<Product/>}/>
+      <Route loader={productsLoader} path="shop" element={<Shop />} />
+      <Route
+        loader={singleProductLoader}
+        path="shop/:id"
+        element={<Product />}
+      />
       <Route path="cart" element={<Cart />} />
     </Route>
   )
 );
+
 
 function App() {
   return <RouterProvider router={router} />;
