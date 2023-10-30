@@ -6,8 +6,8 @@ import { useEffect } from "react";
 
 function RootLayout() {
 
-  const {cart} = useContext(CartContext);
-  const [totalInCart,setTotalInCart] = useState(0);
+  const {cart,totalInCart,setTotalInCart} = useContext(CartContext);
+  
 
   const cartQuantity = () => {
     const quantitiesArray = cart.map((item) => item.amount);
