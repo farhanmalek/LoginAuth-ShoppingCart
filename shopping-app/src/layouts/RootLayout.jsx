@@ -28,9 +28,10 @@ useEffect(() => {
 
   return (
   <>
-  <div className="flex justify-between bg-blue-800 text-white h-20 items-center">
-    <h1 className="text-4xl font-extrabold ml-2 text-yellow-500">myshop.com</h1>
-    <div className="flex w-[25%] justify-evenly font-bold">
+  <div className="flex justify-between
+  lg:flex lg:justify-between bg-blue-800 text-white h-20 items-center">
+    <h1 className="font-bold text-yellow-500 md:text-4xl ml-2">myshop.com</h1>
+    <div className="flex font-bold mr-2">
         <NavLink
          to= "/" className=" hover:bg-blue-600 p-1 flex justify-center" >Home</NavLink>
         <NavLink to="shop" className=" hover:bg-blue-600 p-1 flex justify-center">Shop</NavLink>

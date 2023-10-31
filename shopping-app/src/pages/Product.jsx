@@ -5,15 +5,15 @@ import CartContext from "../context/CartContext";
 
 function Product() {
   const singleProduct = useLoaderData();
-  const {cart,handleAddToCart,handleQuantity,handleOp,quantity} = useContext(CartContext);
+  const {handleAddToCart,handleQuantity,handleOp,quantity} = useContext(CartContext);
 
 
 
   return (
     <>
-      <div className="flex justify-center items-center mt-8  gap-9">
+      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center lg:mt-8 gap-9">
         <img
-          className=" w-92 h-72 "
+          className="max-w-xs h-72 self-center "
           src={singleProduct.images[1]}
           alt={singleProduct.title}
         />
@@ -36,11 +36,10 @@ function Product() {
         </button>
       
         </div>
-        <Link to="/shop" className="mt-4 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded flex justify-center">
+        <Link to="/shop" className="mt-4 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded flex justify-center mr-2 ml-2 w-[40%] self-center">
           Back to Shop
         </Link>
         </div>
-     {console.log(cart)}
       </div>
       
     </>
