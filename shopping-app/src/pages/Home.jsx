@@ -13,7 +13,7 @@ function Home() {
           className="h-96 bg-cover bg-center flex flex-col gap-[100px]"
           style={{ backgroundImage: `url('../src/images/heroshop.jpg')` }}
         >
-          <h1 className="text-white font-extrabold text-3xl">
+          <h1 className="text-white font-extrabold text-3xl self-center">
             {" "}
             All your wants and needs, in one place, indeed.
           </h1>

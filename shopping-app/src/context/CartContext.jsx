@@ -18,9 +18,11 @@ export function CartProvider({children}) {
           //it does exist, update the quantity of that product only instead of adding a dupe.
           singleProduct.amount = singleProduct.amount + quantity;
           setCart([...cart])
+       
         } else if (!doesProductExist) {
           singleProduct.amount = quantity; //push in initial quantity into the object e.g 3
           setCart([...cart, singleProduct])
+       
         }
       }
     
