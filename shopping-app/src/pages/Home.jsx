@@ -11,7 +11,7 @@ function Home() {
       <div className="flex-col justify-around gap-11">
         <div
           className="h-96 bg-cover bg-center flex flex-col gap-[100px]"
-          style={{ backgroundImage: `url('../src/images/heroshop.jpg')` }}
+          style={{ backgroundImage: `url('/images/heroshop.jpg')` }}
         >
           <h1 className="text-white font-extrabold text-3xl self-center">
             {" "}

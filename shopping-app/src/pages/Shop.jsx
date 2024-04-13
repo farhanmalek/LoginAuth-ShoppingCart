@@ -75,7 +75,7 @@ function Shop() {
       <div className="flex flex-col mx-auto p-4 text-center">
         <div
           className="border border-blue-500 bg-center bg-cover"
-          style={{ backgroundImage: `url('../src/images/shophero.jpg')` }}
+          style={{ backgroundImage: `url('/images/shophero.jpg')` }}
         >
           <h1 className="text-4xl text-yellow-600 font-bold mb-2">
             myshop.com
